@@ -1,0 +1,9 @@
+*.pickle
+*.mp4
+*.jpg
+*.png
+/handtracking/
+/models-1.12.0/
+/ego_model/
+*.caffemodel
+*.pth
