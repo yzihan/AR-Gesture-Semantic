@@ -31,7 +31,7 @@ gethandpos.py: calculate hand keypoints frame by frame for one part of the datas
 
 ##### Hand Gesture Classification
 
-After being normized (make the center (mean) of all coordinates at (0,0)), the matrix consisting of input coordinates of hand keypoints is flattened and passed into a fully-connected network with three hidden layers with 128, 256, 72 hidden units, respectively, using ReLU activation. The final regression is linear.
+After being normalized (make the center (mean) of all coordinates at (0,0)), the matrix consisting of input coordinates of hand keypoints is flattened and passed into a fully-connected network with three hidden layers with 128, 256, 72 hidden units, respectively, using ReLU activation. The final regression is linear.
 
 ###### code:
 
@@ -41,7 +41,7 @@ test.py: generate test videos (using the trained network)
 
 ##### others
 
-uesful：
+useful：
 
 
 demo2.py: Use hand_pose_model to show hand keypoints
@@ -55,3 +55,4 @@ src/ && model/: the hand_pose_model (downloaded from github)
 ego_model/: the trained model in caffe and the translated pytorch model, used by the failed hand detector#1. The conversion is conducted by MMdnn, the code is hand-modified after automatic conversion.
 
 models-1.12.0/: tensorflow/models, the repo that contains Objection Detection API, which is used by the failed hand detector #2
+
